@@ -1,3 +1,8 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "e-swiper": "/components/e-swiper/e-swiper",
+    "e-shopping-list": "/components/e-shopping-list/e-shopping-list",
+    "e-send-pop": "/components/e-send-pop/e-send-pop"
+  },
+  "navigationBarTitleText": "E豆超级社群"
 }

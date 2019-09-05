@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "e-search": "/components/e-search/e-search",
+    "e-shopping-list": "/components/e-shopping-list/e-shopping-list"
+  },
+  "navigationBarTitleText": "E豆商城"
 }

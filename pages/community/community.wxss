@@ -1,1 +1,40 @@
 /* pages/community/community.wxss */
+
+.community-box {
+  width: 685rpx;
+  height: auto;
+  margin: 0 auto;
+}
+
+.community-user-info {
+  margin-left: 20rpx;
+}
+
+.community-user-info view:nth-child(1) {
+  font-size: 28rpx;
+}
+
+.community-user-info view:nth-child(2) {
+  font-size: 22rpx;
+  color: #888;
+}
+
+.community-user-imgs {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30rpx;
+}
+
+.community-user-num{
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 28rpx;
+  margin-bottom: 25rpx
+}
+
+.community-user-num view{
+  width: 104rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

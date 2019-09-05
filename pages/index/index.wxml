@@ -1,2 +1,47 @@
 <!--pages/index/index.wxml-->
-<text>pages/index/index.wxml</text>
+<view>
+  <!-- 头部 -->
+  <view class='home-top box-flex'>
+    <view>
+      <view>
+        我的
+        <image class='e-img' mode="widthFix" src='/images/E.png'></image> 豆</view>
+      <view class='home-top-money'>145,690</view>
+    </view>
+    <view class='home-top-images box-flex'>
+      <image src='/images/A1.2.1.png'></image>
+      <image src='/images/A1.2.2.png'></image>
+      <image src='/images/A1.2.3.png' catchtap="changeSendPopVisible"></image>
+    </view>
+  </view>
+  <!-- 轮播 -->
+  <e-swiper></e-swiper>
+  <!-- 活动池标题 -->
+  <view class='home-title box-flex'>
+    <view class='box-flex home-title-left'>
+      <view class='home-title-g'></view>
+      <view>活动池</view>
+    </view>
+    <image class='dian-img' mode='widthFix' src='/images/A1.4.png'></image>
+  </view>
+  <!-- 活动池子 -->
+  <view class='box-flex activity-box'>
+    <view class='activity-box-item' wx:for='{{ activityList }}' wx:key='{{ index }}'>
+      <image lazy-load src='{{ item }}'></image>
+    </view>
+  </view>
+  <!-- E商城标题 -->
+  <view class='home-title box-flex'>
+    <view class='box-flex home-title-left'>
+      <view class='home-title-g'></view>
+      <view>E豆商城</view>
+    </view>
+    <image class='dian-img' mode='widthFix' src='/images/A1.4.png'></image>
+  </view>
+  <!-- 商城池子 -->
+  <e-shopping-list></e-shopping-list>
+</view>
+
+<block wx:if='{{sendPopVisible}}'>
+  <e-send-pop></e-send-pop>
+</block>

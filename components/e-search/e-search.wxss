@@ -1,0 +1,33 @@
+/* components/e-search/e-search.wxss */
+.e-search{
+  width: 685rpx;
+  height: 58rpx;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.e-search-input{
+  width: 613rpx;
+  height: 58rpx;
+  background-color: #eee;
+  box-sizing: border-box;
+  padding-left: 30rpx;
+  border-radius: 29rpx;
+  display: flex;
+  align-items: center;
+}
+.search-img{
+  width: 23rpx;
+  height: 23rpx;
+}
+.e-search-shopping{
+  width: 58rpx;
+  height: 58rpx;
+  background-color: #eee;
+  border-radius: 50%;
+}
+.shopping-img{
+  width:58rpx;
+  height: 58rpx;
+}

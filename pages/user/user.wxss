@@ -1,1 +1,80 @@
 /* pages/user/user.wxss */
+page{
+  min-height: 100%;
+  background-color: #eee;
+}
+.user-top{
+  width: 100%;
+  height: 410rpx;
+  position: relative;
+}
+.user-top-my{
+  font-size: 32rpx;
+  color:#fff;
+}
+.user-top-info{
+  width: 685rpx;
+  height: 310rpx;
+  background-color:#ffffff;
+  margin: 36rpx auto;
+  position: relative;
+
+}
+.user-top-info-box{
+  box-sizing: border-box;
+  padding: 36rpx 30rpx 0;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.user-info-box{
+  align-items: center;
+}
+.user-img{
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 23rpx;
+}
+
+.user-info view:nth-child(1) {
+  font-size: 30rpx;
+  margin-bottom: 10rpx;
+}
+
+.user-info view:nth-child(2) {
+  font-size: 24rpx;
+}
+
+.user-top-button-box{
+  width: 630rpx;
+  height: 88rpx;
+  margin: 50rpx auto 0;
+  border-radius: 44rpx;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 30rpx;
+  color:#fff;
+  background: linear-gradient(90deg, #fc3d42, #fd5c46); /* 标准的语法（必须放在最后） */
+}
+.user-bottom{
+  margin-top: 120rpx;
+}
+.user-bottom-list{
+  width: 685rpx;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+  padding: 10rpx 25rpx 0;
+  margin-bottom: 20rpx;
+}
+.user-bottom-item{
+  justify-content: space-between;
+  align-items: center;
+  font-size: 28rpx;
+  height: 78rpx;
+  border-bottom: 1rpx solid #eee;
+  padding-bottom: 10rpx
+}
+.user-bottom-list .user-bottom-item:nth-last-child(1){
+  border-bottom:none;
+}

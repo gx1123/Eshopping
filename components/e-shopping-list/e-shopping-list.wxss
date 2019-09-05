@@ -1,0 +1,38 @@
+/* components/e-shopping-list/e-shopping-list.wxss */
+
+.box-flex {
+  display: flex;
+}
+
+.shopping-box {
+  width: 685rpx;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.shopping-box-item {
+  width: 330rpx;
+  height: 436rpx;
+  margin-bottom: 15rpx;
+}
+
+.shopping-box-item-img {
+  width: 330rpx;
+  height: 331rpx;
+}
+
+.shopping-box-item-name {
+  font-size: 32rpx;
+}
+
+.shopping-box-item-price {
+  font-size: 28rpx;
+  color: red;
+  align-items: center;
+}
+
+.e-img {
+  width: 35rpx;
+  height: 35rpx;
+}

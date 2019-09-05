@@ -1,0 +1,50 @@
+/* components/e-send-pop/e-send-pop.wxss */
+
+.pop-box {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.send-pop {
+  width: 630rpx;
+  height: 516rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  position: relative;
+  box-sizing: border-box;
+  padding: 33rpx 45rpx;
+  font-size: 30rpx;
+}
+
+.off-img {
+  width: 22rpx;
+  height: 22rpx;
+  position: absolute;
+  right: 32rpx;
+  top: 42rpx;
+}
+
+.send-pop-title{
+  text-align: center;
+  font-size: 30rpx;
+}
+
+.send-pop-center{
+  min-height: 100rpx;
+  margin-top: 55rpx;
+}
+
+.send-pop-center-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 76rpx;
+  border-bottom: 1rpx solid #eee;
+
+}

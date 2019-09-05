@@ -1,0 +1,19 @@
+<!--components/e-send-pop/e-send-pop.wxml-->
+<view class="pop-box">
+  <view class="send-pop">
+    <image src='/images/A1.7.png' class='off-img'></image>
+    <view class='send-pop-title'>E豆转赠好友</view>
+    <view class='send-pop-center'>
+      <view class='send-pop-center-item'>
+        <text>当前剩余</text>
+        <text>145,690</text>
+      </view>
+      <view class='send-pop-center-item'>
+        <text>转增数</text>
+        <view>
+          
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

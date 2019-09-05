@@ -1,2 +1,68 @@
 <!--pages/user/user.wxml-->
-<text>pages/user/user.wxml</text>
+<view>
+  <!-- 头部信息 -->
+  <view class='user-top' style="background: url(https://etc.qljtxx.com/file//etc/2019-09-05/1567645882101.png) no-repeat center;">
+    <view class='user-top-my' style="padding-left: {{ 375 - menuButtonInfo.right + 'px'}};padding-top: {{menuButtonInfo.top + 'px'}};height: {{menuButtonInfo.height + 'px'}};line-height: {{menuButtonInfo.height + 'px'}}">我的</view>
+    <view class="user-top-info">
+      <view class="box-flex user-top-info-box">
+        <view class='box-flex user-info-box'>
+          <image class='user-img' src='/images/D1.1.png'></image>
+          <view class='user-info'>
+            <view>微信名称</view>
+            <view>
+              我的
+              <image class='e-img' mode="widthFix" src='/images/E.png'></image> 豆
+            </view>
+          </view>
+        </view>
+        <view class="home-top-money">145,690</view>
+      </view>
+      <view class="user-top-button-box box-flex">
+        <view class='box-flex flex-align-center'>
+          <image style="width: 78rpx;height: 78rpx" src='/images/A1.2.1.png'></image>
+          <text>领取E豆</text>
+        </view>
+        <view style="height: 45rpx;width: 2rpx; background-color:#fff"></view>
+        <view class='box-flex flex-align-center'>
+          <image  style="width: 78rpx;height: 78rpx" src='/images/A1.2.3.png'></image>
+          <text>转增好友</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 选择 -->
+  <view class='user-bottom'>
+    <view class="user-bottom-list">
+      <view class="user-bottom-item box-flex">
+        <text>我的购物车</text>
+        <image style="width:14rpx;height:26rpx;" src='/images/D1.5.png'></image>
+      </view>
+      <view class="user-bottom-item box-flex">
+        <text>地址管理</text>
+        <image style="width:14rpx;height:26rpx;" src='/images/D1.5.png'></image>
+      </view>
+      <view class="user-bottom-item box-flex">
+        <text>我的订单</text>
+        <image style="width:14rpx;height:26rpx;" src='/images/D1.5.png'></image>
+      </view>
+    </view>
+
+    <view class="user-bottom-list">
+      <view class="user-bottom-item box-flex">
+        <text>我的评论</text>
+        <image style="width:14rpx;height:26rpx;" src='/images/D1.5.png'></image>
+      </view>
+      <view class="user-bottom-item box-flex">
+        <text>系统消息</text>
+        <image style="width:14rpx;height:26rpx;" src='/images/D1.5.png'></image>
+      </view>
+    </view>
+
+    <view class="user-bottom-list">
+      <view class="user-bottom-item box-flex">
+        <text>退出登陆</text>
+        <image style="width:14rpx;height:26rpx;" src='/images/D1.5.png'></image>
+      </view>
+    </view>
+  </view>
+</view>

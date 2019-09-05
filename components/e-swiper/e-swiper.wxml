@@ -1,0 +1,13 @@
+<!--components/home-swiper/home-swiper.wxml-->
+<view class='swiper-box'>
+  <swiper class='home-swiper' current="{{ current }}" bindchange='changeSwiperCurrent' autoplay previous-margin='17.5rpx' next-margin="17.5rpx" circular>
+    <swiper-item wx:for='{{3}}' wx:key='{{index}}' class='home-swiper-item '>
+      <image lazy-load src='https://etc.qljtxx.com/file//etc/2019-09-04/1567561767796.png'></image>
+    </swiper-item>
+  </swiper>
+  <view>
+    <view class='home-swiper-indicator'>
+      <view catchtap="changeCurrent" data-current='{{index}}' class='home-swiper-indicator-item {{ current === index ? "current-swiper-indicator-item" : "" }}' wx:for='{{3}}' wx:key='{{index}}'></view>
+    </view>
+  </view>
+</view>

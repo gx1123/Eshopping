@@ -1,0 +1,10 @@
+<!--components/e-search/e-search.wxml-->
+<view class="e-search">
+  <view class='e-search-input'>
+    <image class='search-img' src='/images/B1.1.png'></image>
+    <input style="margin-left:20rpx;width:500rpx;" placeholder="尝试搜净水机" type="text"></input>
+  </view>
+  <view class='e-search-shopping'>
+    <image class='shopping-img' src='/images/B1.2.png'></image>
+  </view>
+</view>

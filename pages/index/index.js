@@ -5,9 +5,22 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    activityList: [
+      'https://etc.qljtxx.com/file//etc/2019-09-04/1567567917193.png',
+      'https://etc.qljtxx.com/file//etc/2019-09-04/1567568393748.png',
+      'https://etc.qljtxx.com/file//etc/2019-09-04/1567568222489.png',
+      'https://etc.qljtxx.com/file//etc/2019-09-04/1567567917193.png'
+      ],
+    sendPopVisible: false
   },
-
+  /**
+   * 改变转送弹窗状态
+   */
+  changeSendPopVisible () {
+    this.setData({
+      sendPopVisible: !this.data.sendPopVisible
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -44,13 +57,6 @@ Page({
   },
 
   /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
@@ -60,7 +66,7 @@ Page({
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
+  // onShareAppMessage: function () {
 
-  }
+  // }
 })

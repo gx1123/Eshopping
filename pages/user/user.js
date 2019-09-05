@@ -1,11 +1,12 @@
 // pages/user/user.js
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    menuButtonInfo: app.globalData.menuButtonInfo
   },
 
   /**

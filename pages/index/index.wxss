@@ -1,1 +1,26 @@
 /* pages/index/index.wxss */
+
+.home-top {
+  width: 685rpx;
+  height: 112rpx;
+  margin: 0 auto 30rpx;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-top-images {
+  width: 305rpx;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-top-images image {
+  width: 78rpx;
+  height: 78rpx;
+}
+
+.home-title {
+  justify-content: space-between;
+  align-items: center;
+  font-size: 32rpx;
+}

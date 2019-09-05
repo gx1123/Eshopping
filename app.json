@@ -1,9 +1,9 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/shopping/shopping",
+    "pages/user/user",
     "pages/community/community",
-    "pages/user/user"
+    "pages/shopping/shopping"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -19,26 +19,26 @@
       {
         "pagePath": "pages/index/index",
         "text": "首页",
-        "iconPath": "/images/1.png",
-        "selectedIconPath": "/images/1-1.png"
+        "iconPath": "/images/1.1.png",
+        "selectedIconPath": "/images/1.2.png"
       },
       {
         "pagePath": "pages/shopping/shopping",
         "text": "商城",
-        "iconPath": "/images/3.png",
-        "selectedIconPath": "/images/3-1.png"
+        "iconPath": "/images/2.1.png",
+        "selectedIconPath": "/images/2.2.png"
       },
       {
         "pagePath": "pages/community/community",
         "text": "社区",
-        "iconPath": "/images/4.png",
-        "selectedIconPath": "/images/4-1.png"
+        "iconPath": "/images/3.1.png",
+        "selectedIconPath": "/images/3.2.png"
       },
       {
         "pagePath": "pages/user/user",
         "text": "我的",
-        "iconPath": "/images/5.png",
-        "selectedIconPath": "/images/5-1.png"
+        "iconPath": "/images/4.1.png",
+        "selectedIconPath": "/images/4.2.png"
       }
     ]
   },

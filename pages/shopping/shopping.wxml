@@ -1,2 +1,7 @@
 <!--pages/shopping/shopping.wxml-->
-<text>pages/shopping/shopping.wxml</text>
+<view>
+  <e-search></e-search>
+  <view class='shopping-list'>
+    <e-shopping-list></e-shopping-list>
+  </view>
+</view>
