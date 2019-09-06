@@ -1,4 +1,7 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "e-send-pop": "/components/e-send-pop/e-send-pop",
+    "e-head": "/components/e-head/e-head"
+  },
   "navigationStyle": "custom"
 }

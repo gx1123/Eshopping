@@ -1,6 +1,8 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/communityPublish/communityPublish",
+    "pages/communityDetails/communityDetails",
     "pages/user/user",
     "pages/community/community",
     "pages/shopping/shopping"

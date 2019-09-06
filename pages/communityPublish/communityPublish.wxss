@@ -1,0 +1,53 @@
+/* pages/communityPublish/communityPublish.wxss */
+page{
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+}
+
+.publish-box{
+  width: 100%;
+  min-height: 434rpx;
+  background-color: #fff;
+  margin-top: 20rpx;
+  box-sizing: border-box;
+  padding: 20rpx;
+}
+
+.publish-textarea{
+  width: 100%;
+  height: 262rpx;
+  font-size: 26rpx;
+}
+
+.publish-zi{
+  text-align: right;
+  color: #888;
+  border-bottom: 1rpx solid #eee;
+  padding-bottom: 20rpx;
+}
+
+.publish-imgs{
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20rpx;
+}
+
+.publish-imgs-item{
+  width: 100rpx;
+  height: 100rpx;
+  border: 1rpx solid #eaeaea;
+  margin-right: 20rpx;
+}
+.publish-imgs-item image{
+  width: 100%;
+  height: 100%;
+}
+
+.publish-imgs-add{
+  width: 100rpx;
+  height: 100rpx;
+  border: 1rpx solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}

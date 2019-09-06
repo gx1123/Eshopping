@@ -22,6 +22,14 @@ Page({
     })
   },
   /**
+   * 前往商城 
+   */
+  navigateToShopping () {
+    wx.switchTab({
+      url: '/pages/shopping/shopping',
+    })
+  },
+  /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {

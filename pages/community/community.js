@@ -34,12 +34,30 @@ Page({
       }
     ]
   },
-
+  /**
+   * 前往社区详情 
+   */
+  navigateToCommunityDetails () {
+    let params = {
+      id: '111'   
+    }
+    wx.navigateTo({
+      url: `/pages/communityDetails/communityDetails?params=${JSON.stringify(params)}`,
+    })
+  }, 
+  /**
+   * 前往发布社区
+   */
+  navigateToCommunityPublish () {
+    wx.navigateTo({
+      url: `/pages/communityPublish/communityPublish`,
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    
   },
 
   /**

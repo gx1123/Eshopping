@@ -1,0 +1,83 @@
+/* pages/communityDetails/communityDetails.wxss */
+@import '../community/community.wxss';
+
+.comment-box-title {
+  height: 98rpx;
+  line-height: 98rpx;
+  font-size: 30rpx;
+}
+
+.comment-box-user {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.comment-user-img {
+  width: 48rpx;
+  height: 48rpx;
+  margin-right: 15rpx;
+}
+
+.comment-user-name {
+  font-size: 26rpx;
+  color: #888;
+}
+
+.comment-box-text-box {
+  box-sizing: border-box;
+  padding-left: 63rpx;
+}
+
+.comment-box-text {
+  margin-top: 32rpx;
+  font-size: 28rpx;
+}
+
+.comment-box-date {
+  margin-top: 12rpx;
+  font-size: 22rpx;
+  color: #888;
+  border-bottom: 1rpx solid #eee;
+  padding-bottom: 25rpx;
+}
+
+.comment-box-content{
+  margin-bottom: 20rpx;
+}
+
+.comment-box{
+  margin-bottom: 97rpx;
+}
+
+.send-fixed{
+  height: 98rpx;
+  width: 100%;
+  position: fixed;
+  bottom: 0;box-sizing: border-box;
+  border-top: 1rpx solid #eee;
+  padding: 20rpx 30rpx;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+
+.send-fixed-input{
+  width: 500rpx;
+  height: 58rpx;
+  border:1rpx solid #f0f0f0;
+  border-radius: 29rpx;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 30rpx;
+  background-color: #f5f5f5;
+}
+
+.send-fixed-input image{
+  margin-right: 30rpx;
+}
+
+.send-fixed-button{
+  width: 130rpx;
+  justify-content: space-between;
+  align-items: center;
+}

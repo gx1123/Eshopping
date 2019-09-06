@@ -1,26 +1,30 @@
-// pages/user/user.js
-const app = getApp()
+// pages/communityDetails/communityDetails.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    menuButtonInfo: app.globalData.menuButtonInfo,
-    sendPopVisible: false
+    commDetails: {
+      name: 'E豆忠实粉',
+      userImg: '/images/D1.1.png',
+      date: '08-30 22:30',
+      text: '今天在高速收费站看到了又在办ETC的哎。不行，我要赶紧找人帮忙。。还差200E豆就能换饮水机了。。。',
+      forwardNum: 222,
+      commentNum: 200,
+      goodNum: 888,
+      imgs: [
+        "https://etc.qljtxx.com/file//etc/2019-09-04/1567567917193.png"
+      ]
+    },
   },
-  /**
-    * 改变转送弹窗状态
-    */
-  changeSendPopVisible() {
-    this.setData({
-      sendPopVisible: !this.data.sendPopVisible
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    let params = JSON.parse(options.params)
+    console.log(params.id)
 
   },
 

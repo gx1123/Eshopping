@@ -10,7 +10,7 @@
     </view>
     <view class='home-top-images box-flex'>
       <image src='/images/A1.2.1.png'></image>
-      <image src='/images/A1.2.2.png'></image>
+      <image src='/images/A1.2.2.png' catchtap="navigateToShopping"></image>
       <image src='/images/A1.2.3.png' catchtap="changeSendPopVisible"></image>
     </view>
   </view>
@@ -36,12 +36,12 @@
       <view class='home-title-g'></view>
       <view>E豆商城</view>
     </view>
-    <image class='dian-img' mode='widthFix' src='/images/A1.4.png'></image>
+    <image class='dian-img' catchtap="navigateToShopping" mode='widthFix' src='/images/A1.4.png'></image>
   </view>
   <!-- 商城池子 -->
   <e-shopping-list></e-shopping-list>
 </view>
 
 <block wx:if='{{sendPopVisible}}'>
-  <e-send-pop></e-send-pop>
+  <e-send-pop popType='{{1}}' bind:closeSendPop='changeSendPopVisible'></e-send-pop>
 </block>

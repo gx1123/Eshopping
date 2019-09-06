@@ -1,19 +1,50 @@
 <!--components/e-send-pop/e-send-pop.wxml-->
 <view class="pop-box">
-  <view class="send-pop">
-    <image src='/images/A1.7.png' class='off-img'></image>
+  <view class="send-pop" wx:if='{{popType === 1}}'>
+    <image src='/images/A1.7.png' catchtap="closeSendPop" class='off-img'></image>
     <view class='send-pop-title'>E豆转赠好友</view>
     <view class='send-pop-center'>
       <view class='send-pop-center-item'>
         <text>当前剩余</text>
         <text>145,690</text>
       </view>
+
       <view class='send-pop-center-item'>
         <text>转增数</text>
-        <view>
-          
+        <view class="send-pop-input-box">
+          <input type='number' placeholder="请输入转增E豆"></input>
+          <view>全部</view>
+        </view>
+      </view>
+      
+      <view class='send-pop-center-item'>
+        <text>接受人</text>
+        <view class="send-pop-input-box">
+          <input type='number' placeholder="请输入接受人手机号"></input>
+          <view>获取</view>
         </view>
       </view>
     </view>
+    <view class='send-pop-button' catchtap="confirmSend">确定转增</view>
   </view>
+  <view class="send-pop" wx:if='{{popType === 2}}'>
+    <image src='/images/A1.7.png' catchtap="closeSendPop" class='off-img'></image>
+    <view class="send-pop-center2">
+      <view class="send-pop-hint">您将为手机号</view>
+      <view class='send-pop-num'>18340021915</view>
+      <view class="send-pop-hint">转增E豆</view>
+      <view class='send-pop-num'>3, 487</view>
+    </view>
+    <view class='send-pop-button' style="margin-top: 40rpx" catchtap="confirmSend">确定转增</view>
+  </view>
+
+  <view class="send-pop" wx:if='{{popType === 3}}'>
+    <image src='/images/A1.7.png' catchtap="closeSendPop" class='off-img'></image>
+    <view class='send-pop-title'>转赠成功</view>
+    <view class="send-pop-center3">
+      <image style="width: 100%" mode="widthFix" src='https://etc.qljtxx.com/file//etc/2019-09-05/1567660935500.png'></image>
+    </view>
+    <view class='send-pop-button' style="margin-top: 40rpx" catchtap="closeSendPop">完成</view>
+  </view>
+
 </view>

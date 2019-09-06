@@ -1,22 +1,43 @@
-// pages/user/user.js
-const app = getApp()
+// pages/communityPublish/communityPublish.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    menuButtonInfo: app.globalData.menuButtonInfo,
-    sendPopVisible: false
+    publishValue: '',
+    publishImgs: []
   },
   /**
-    * 改变转送弹窗状态
-    */
-  changeSendPopVisible() {
+   * textarea 值
+   */
+  setPublishValue({ detail }) {
     this.setData({
-      sendPopVisible: !this.data.sendPopVisible
+      publishValue: detail.value
     })
   },
+  /**
+   * 选择本地图片或者打开相机
+   */
+  selectChooseImgs () {
+    let { publishImgs } = this.data;
+    wx.chooseMessageFile({
+      count: 4,
+      success: res=> {
+        console.log(res)
+        res.tempFiles.forEach(item => {
+          if (publishImgs.length >= 4) {
+            return
+          }
+          publishImgs.push(item)
+        })
+        this.setData({
+          publishImgs
+        })
+      },
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */

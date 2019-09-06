@@ -1,0 +1,13 @@
+<!--pages/communityPublish/communityPublish.wxml-->
+<view class='publish-box'>
+  <textarea class='publish-textarea' value='{{publishValue}}'  maxlength='{{500}}' bindinput='setPublishValue'  placeholder="写点什么吧。。。"></textarea>
+  <view class='publish-zi'>{{ publishValue.length }}/500</view>
+  <view class='publish-imgs box-flex'>
+    <view class="publish-imgs-item" wx:for='{{publishImgs}}' wx:key='{{index}}'>
+      <image src='{{item.path}}'></image>
+    </view>
+    <view wx:if='{{publishImgs.length < 4}}' class="publish-imgs-add box-flex" catchtap="selectChooseImgs">
+      <image style="width:50rpx;height:50rpx;" src='/images/C3.1.png'></image>
+    </view>
+  </view>
+</view>

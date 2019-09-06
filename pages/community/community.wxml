@@ -1,6 +1,6 @@
 <!--pages/community/community.wxml-->
 <view class="community-box">
-  <view wx:for='{{communityList}}' wx:key='{{index}}' style="margin-top: 40rpx;border-bottom: 1rpx solid #eee">
+  <view wx:for='{{communityList}}' catchtap="navigateToCommunityDetails" wx:key='{{index}}' style="margin-top: 40rpx;border-bottom: 1rpx solid #eee">
     <view class='box-flex'>
       <image class='community-user-img' src='{{item.userImg}}' lazy-load></image>
       <view class='community-user-info'>
@@ -35,5 +35,5 @@
 </view>
 
 <view class='issue-fixed'>
-  <image style="width: 68rpx;height: 120rpx;" src='/images/C1.4.1.png'></image>
+  <image catchtap="navigateToCommunityPublish" style="width: 68rpx;height: 120rpx;" src='/images/C1.4.1.png'></image>
 </view>

@@ -1,0 +1,14 @@
+/* components/e-head/e-head.wxss */
+.user-top-my{
+  padding-left: 20rpx;
+  display: flex;
+  align-items: center;
+  font-size: 34rpx;
+  color: #fff;
+}
+
+.user-top-my image{
+  margin-right: 20rpx;
+  width: 15rpx;
+  height: 27rpx;
+}

@@ -1,0 +1,54 @@
+<!--pages/communityDetails/communityDetails.wxml-->
+<view class="community-box">
+  <view style="margin-top: 40rpx;border-bottom: 1rpx solid #eee">
+    <view class='box-flex'>
+      <image class='community-user-img' src='{{commDetails.userImg}}' lazy-load></image>
+      <view class='community-user-info'>
+        <view>{{commDetails.name}}</view>
+        <view>{{commDetails.date}}</view>
+      </view>
+    </view>
+    <view style="margin-top: 30rpx;font-size:28rpx">{{commDetails.text}}</view>
+    <view style="margin-top: 30rpx;" wx:if='{{commDetails.imgs.length === 1}}'>
+      <image style="width: 100%" lazy-load mode='widthFix' src='{{commDetails.imgs[0]}}'></image>
+    </view>
+    <view class='box-flex community-user-imgs' wx:else>
+      <view wx:for='{{ commDetails.imgs }}' wx:for-item='imgUrl' wx:key='{{imgUrl}}' style="margin-bottom: 10rpx">
+        <image src='{{imgUrl}}' lazy-load style="width: 330rpx;height: 243rpx;"></image>
+      </view>
+    </view>
+    <view class="box-flex community-user-num"></view>
+  </view>
+  <view class='comment-box'>
+    <view class="comment-box-title">评论
+      <text style="color:#888">(88)</text>
+    </view>
+    <view class='comment-box-content' wx:for='{{5}}' wx:key='{{index}}'>
+      <view class='box-flex comment-box-user'>
+        <view class="comment-box-user box-flex">
+          <image class='comment-user-img' src='/images/D1.1.png'></image>
+          <text class="comment-user-name">小巷秋雨</text>
+        </view>
+        <view class="box-flex flex-align-center">
+          <image style="width:27rpx;height: 27rpx;margin-right: 10rpx" src='/images/C1.3.1.png'></image>
+          <text class="comment-user-name">2</text>
+        </view>
+      </view>
+      <view class='comment-box-text-box'>
+        <view class="comment-box-text">我还有多余的200</view>
+        <view class="comment-box-date">20分钟前</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="send-fixed box-flex">
+  <view class='send-fixed-input box-flex'>
+    <image src='/images/C2.2.png' style="width: 30rpx;height: 30rpx;"></image>
+    <input type='text' style="width: 400rpx" placeholder="发表评论吧"></input>
+  </view>
+  <view class="send-fixed-button box-flex">
+    <image style="width:42rpx;height: 42rpx" src='/images/send.png'></image>
+    <image style="width:42rpx;height: 40rpx" src='/images/C2.4.png'></image>
+  </view>
+</view>
