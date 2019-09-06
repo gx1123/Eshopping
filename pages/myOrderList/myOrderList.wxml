@@ -1,0 +1,41 @@
+<!--pages/myOrderList/myOrderList.wxml-->
+<view class="order-list-box">
+  <view class='order-list-head box-flex'>
+    <view catchtap="changeHeadTindex" data-index='{{index}}' wx:for='{{headTitles}}' wx:key='{{index}}' class="{{headTindex === index ?'current-order-list-head' : '' }}">{{item}}</view>
+  </view>
+  <scroll-view scroll-y class='order-list-scroll'>
+    <view class="order-list-scroll-box">
+      <view class="order-list-item" catchtap="navigatoMyOrderDetails" data-id="{{indez}}" wx:for='{{4}}' wx:key='{{index}}'>
+        <view class="flex-center-between lh_60r bor_b">
+          <view>订单编号: 11111000000111</view>
+          <view style="color:red">已发货</view>
+        </view>
+
+        <view class="order-item-goods box-flex am_c bor_b">
+          <image style="width:160rpx;height: 160rpx;margin-right: 26rpx" src='https://etc.qljtxx.com/file//etc/2019-09-04/1567570230148.jpg'></image>
+          <view class="box-flex col ju_b" style="height: 160rpx">
+            <view class="order-item-goods-name">中天酒庄干红葡萄就酒</view>
+            <view style="margin-bottom: 15rpx">
+              <view class="order-item-goods-specification">200ml</view>
+            </view>
+            <view class="box-flex am_c">
+              <image class='e-img' style="margin-right:18rpx" src='/images/E.png'></image>
+              <text style="margin-right:18rpx">60000</text>
+              <text>x 1</text>
+            </view>
+          </view>
+        </view>
+
+        <view class="order-item-money box-flex ju_b am_c">
+          <view class="box-flex am_c">
+              <text style="margin-right:14rpx">合计</text>
+              <image class='e-img' style="margin-right:18rpx" src='/images/E.png'></image>
+              <text style="margin-right:18rpx">60000</text>
+            </view>
+          <view wx:if='{{index % 2 === 0}}' class='order-item-button1'>确认收货</view>
+          <view wx:else class="order-item-button2">提醒发货</view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

@@ -71,7 +71,7 @@ page{
   justify-content: space-between;
   align-items: center;
   font-size: 28rpx;
-  height: 78rpx;
+  height: 88rpx;
   border-bottom: 1rpx solid #eee;
   padding-bottom: 10rpx
 }

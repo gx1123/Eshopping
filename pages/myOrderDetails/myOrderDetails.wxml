@@ -1,0 +1,5 @@
+<!--pages/myOrderDetails/myOrderDetails.wxml-->
+<view class="order-details">
+  <view class="order-details-top" style="background: url(https://etc.qljtxx.com/file//etc/2019-09-06/1567756176835.png) no-repeat center;">
+  </view>
+</view>

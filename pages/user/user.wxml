@@ -25,7 +25,7 @@
         </view>
         <view style="height: 45rpx;width: 2rpx; background-color:#fff"></view>
         <view class='box-flex flex-align-center' catchtap="changeSendPopVisible">
-          <image  style="width: 38rpx;height: 38rpx;margin-right: 10rpx" src='/images/1@2x.png'></image>
+          <image style="width: 38rpx;height: 38rpx;margin-right: 10rpx" src='/images/1@2x.png'></image>
           <text style="margin-right: 50rpx;">转增好友</text>
         </view>
       </view>
@@ -34,37 +34,37 @@
   <!-- 选择 -->
   <view class='user-bottom'>
     <view class="user-bottom-list">
-      <view class="user-bottom-item box-flex">
+      <navigator class="user-bottom-item box-flex">
         <text>我的购物车</text>
         <image style="width:14rpx;height:26rpx;" src='/images/D1.5.png'></image>
-      </view>
-      <view class="user-bottom-item box-flex">
+      </navigator>
+      <navigator class="user-bottom-item box-flex">
         <text>地址管理</text>
         <image style="width:14rpx;height:26rpx;" src='/images/D1.5.png'></image>
-      </view>
-      <view class="user-bottom-item box-flex">
+      </navigator>
+      <navigator url="/pages/myOrderList/myOrderList" class="user-bottom-item box-flex">
         <text>我的订单</text>
         <image style="width:14rpx;height:26rpx;" src='/images/D1.5.png'></image>
-      </view>
+      </navigator>
     </view>
 
     <view class="user-bottom-list">
-      <view class="user-bottom-item box-flex">
+      <navigator class="user-bottom-item box-flex">
         <text>我的评论</text>
         <image style="width:14rpx;height:26rpx;" src='/images/D1.5.png'></image>
-      </view>
-      <view class="user-bottom-item box-flex">
+      </navigator>
+      <navigator class="user-bottom-item box-flex">
         <text>系统消息</text>
         <image style="width:14rpx;height:26rpx;" src='/images/D1.5.png'></image>
-      </view>
+      </navigator>
     </view>
 
-    <view class="user-bottom-list">
-      <view class="user-bottom-item box-flex">
+    <!-- <view class="user-bottom-list">
+      <navigator class="user-bottom-item box-flex">
         <text>退出登陆</text>
         <image style="width:14rpx;height:26rpx;" src='/images/D1.5.png'></image>
-      </view>
-    </view>
+      </navigator>
+    </view> -->
   </view>
 </view>
 

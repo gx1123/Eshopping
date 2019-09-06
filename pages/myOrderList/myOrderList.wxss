@@ -1,0 +1,99 @@
+/* pages/myOrderList/myOrderList.wxss */
+
+page {
+  height: 100%;
+  background-color: #eee;
+}
+
+.order-list-head {
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 30rpx;
+  font-size: 28rpx;
+  box-sizing: border-box;
+  width: 685rpx;
+  margin: 0 auto;
+}
+
+.current-order-list-head {
+  color: red;
+  border-bottom: 4rpx solid red;
+}
+
+.order-list-head view {
+  width: 106rpx;
+  text-align: center;
+  padding-bottom: 20rpx;
+  box-sizing: border-box;
+}
+
+.order-list-scroll {
+  width: 100%;
+  margin-top: 20rpx;
+  height: calc(100vh - 140rpx);
+}
+
+.order-list-scroll-box {
+  box-sizing: border-box;
+  padding: 0 32.5rpx;
+}
+
+.order-list-item {
+  width: 100%;
+  min-height: 385rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  margin-bottom: 25rpx;
+  box-sizing: border-box;
+  padding: 27rpx 31rpx;
+  font-size: 26rpx;
+}
+
+.order-item-goods{
+  margin-top: 26rpx;
+  padding-bottom: 20rpx;
+}
+
+.order-item-goods-name{
+  line-height: 40rpx;
+}
+
+.order-item-goods-specification{
+  font-size: 20rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  padding: 0 10rpx;
+  display: inline-block;
+  text-align: center;
+  border-radius: 10rpx;
+  border: 1rpx solid #fc3d42;
+  color: #fc3d42;
+}
+
+.order-item-money{
+  margin-top: 19rpx;
+  font-size: 30rpx;
+}
+
+.order-item-button1{
+  width: 191rpx;
+  height: 58rpx;
+  text-align: center;
+  line-height: 58rpx;
+  border-radius: 29rpx;
+  background-color: #fd5b45;
+  color: #fff;
+  border: 1rpx solid #fd5b45
+
+}
+
+.order-item-button2{
+  width: 191rpx;
+  height: 58rpx;
+  text-align: center;
+  line-height: 58rpx;
+  border-radius: 29rpx;
+  background-color: #fff4f4;
+  color: #fd5b45;
+  border: 1rpx solid #fd5b45
+}

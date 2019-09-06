@@ -1,5 +1,5 @@
 <!--components/e-head/e-head.wxml-->
-<view class='user-top-my' style="padding-top: {{menuButtonInfo.top + 'px'}};height: {{menuButtonInfo.height + 'px'}};">
-  <image wx:if='{{imgVisible}}' src='{{ returnImg === "white" ? "/images/returnW.png" : "/images/returnB.png" }}'></image>
+<view class='user-top-my' style="padding-top: {{menuButtonInfo.top + 'px'}};height: {{ menuButtonInfo.top + menuButtonInfo.height + 'px'}};">
+  <image catchtap="navigateBack" wx:if='{{imgVisible}}' src='{{ returnImg === "white" ? "/images/returnW.png" : "/images/returnB.png" }}'></image>
   <text>{{ headTitle }}</text>
 </view>

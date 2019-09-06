@@ -1,6 +1,8 @@
 {
   "pages": [
+    "pages/myOrderDetails/myOrderDetails",
     "pages/index/index",
+    "pages/myOrderList/myOrderList",
     "pages/communityPublish/communityPublish",
     "pages/communityDetails/communityDetails",
     "pages/user/user",

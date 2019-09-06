@@ -1,0 +1,7 @@
+/* pages/myOrderDetails/myOrderDetails.wxss */
+
+.order-details-top{
+  width: 100%;
+  height: 200rpx;
+  background-size: cover;
+}

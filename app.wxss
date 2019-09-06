@@ -1,4 +1,10 @@
 /**app.wxss**/
+@import './wxss/personui.wxss';
+
+view, text, scroll-view, swiper, button, form, input, textarea, label, navigator,
+image {
+  box-sizing: border-box;
+}
 
 page {
   width: 100%;
@@ -9,8 +15,15 @@ page {
 .box-flex {
   display: flex;
 }
-.flex-align-center{
+
+.flex-align-center {
   align-items: center;
+}
+
+.flex-center-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .e-img {
@@ -81,8 +94,8 @@ page {
   height: 200rpx;
 }
 
-.issue-fixed{
+.issue-fixed {
   position: fixed;
   bottom: 100rpx;
-  right: 0
+  right: 0;
 }
