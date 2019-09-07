@@ -7,6 +7,14 @@ Page({
   data: {
 
   },
+  /**
+   * 复制物流编号
+   */
+  copyNumber () {
+    wx.setClipboardData({
+      data: '111111'
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载
@@ -21,7 +29,6 @@ Page({
   onReady: function () {
 
   },
-
   /**
    * 生命周期函数--监听页面显示
    */

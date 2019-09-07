@@ -1,0 +1,60 @@
+<view class="pos_rel">
+  <swiper class="swiper-box" current="{{currentImg}}" data-id="{{item.id}}" data-idx="{{index}}" bindchange="imgChange">
+    <swiper-item class="swiper-items" wx:for="{{productImg}}" wx:key=''>
+      <image class="wth_100" src="{{item}}" mode="aspectFill"></image>
+    </swiper-item>
+  </swiper>
+  <view class="current_img c_ff p_10_20 br10">{{currentImg + 1}} / {{productImg.length}}</view>
+</view>
+<view class="pl_30 pr_30 mt_30">
+  <view class="flex ju_b am_c mb_30">
+    <view class="f32">大白兔限定香水套装</view>
+    <view class="f28 c_88">销量99</view>
+  </view>
+  <view class="flex ju_b am_c">
+    <view class="price flex am_c">
+      <image src="/images/E.png" mode="widthFix" class="priceLogo"></image>
+      <view class="ml_10">60,000~100,000</view>
+    </view>
+    <view>原价：¥72.99</view>
+  </view>
+  <view class="line"></view>
+  <view class="flex ju_b am_c">
+    <view class="f28 c_33">选择产品属性</view>
+    <view class="flex">
+      <view class="bg_f5 p_10_20 active">200ml</view>
+      <view class="bg_f5 ml_10 p_10_20">400ml</view>
+    </view>
+  </view>
+  <view class="flex ju_b am_c mt_20">
+    <view class="f28 c_33">选择产品数量</view>
+    <view class="stepper flex am_c">  
+      <!-- 减号 -->  
+      <text class="sign {{num <= 1 ? 'disabled' : 'normal'}}" bindtap="delCount" data-index="{{index}}">-</text>  
+      <!-- 数值 -->  
+      <view class="flex number am_c">
+        <input class="" type="number" bindchange="bindManual" value="{{num}}"  disabled="disabled"/>  
+      </view>
+      <!-- 加号 -->  
+      <view class="sign {{num >= 10 ? 'disabled' : 'normal'}}" bindtap="addCount" data-index="{{index}}">+</view>  
+  </view>
+  </view>
+</view>
+<view class="f24 c_55 title mt_40">产品详情</view>
+<view class="content m_20">
+  <view class="f20">1.这是详情请这是详情请这是详情请这是详情请这是详情请这是详情请这是详情请</view>
+  <view class="f20">1.这是详情请这是详情请这是详情请这是详情请这是详情请这是详情请这是详情请</view>
+  <view class="f20">1.这是详情请这是详情请这是详情请这是详情请这是详情请这是详情请这是详情请</view>
+  <view class="f20">1.这是详情请这是详情请这是详情请这是详情请这是详情请这是详情请这是详情请</view>
+  <view class="f20">1.这是详情请这是详情请这是详情请这是详情请这是详情请这是详情请这是详情请</view>
+</view>
+
+
+
+<view class="flex bottom_nav p_15_30 am_c">
+  <view class="flex ml_30">
+    <image src="/images/B2.2.png" class="cartLogo" mode="widthFix"></image>
+  </view>
+  <view class="cart f30 c_ff ml_65">加入购物车</view>
+  <view class="checkOut f30 c_ff">立即兑换</view>
+</view>

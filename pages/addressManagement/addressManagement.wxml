@@ -1,0 +1,41 @@
+<view class="bc_ee h100">
+  <view class="flex am_c ju_b p_30 bc_ff bor_t">
+    <view class="flex col">
+      <view class="flex am_c mb_20">
+        <view class="mr_100 f28">段义心</view>
+          <view class="mr_30 f28">152****1234</view>
+          <view class="default">默认</view>
+      </view>
+      <view class="c_55">山东省济南市历下区舜华路街道香格里拉 东北塔 0227</view>
+    </view>
+    <view class="flex" catchtap="navigatoAddress">
+      <image src="/images/C1.2.png" mode="widthFix" class="editLogo"></image>
+    </view>
+  </view>
+  <view class="flex am_c ju_b p_30 bc_ff bor_t">
+    <view class="flex col">
+      <view class="flex am_c mb_20">
+        <view class="mr_100 f28">段义心</view>
+          <view class="mr_30 f28">152****1234</view>
+      </view>
+      <view class="c_55">山东省济南市历下区舜华路街道香格里拉 东北塔 0227</view>
+    </view>
+    <view class="flex">
+      <image src="/images/C1.2.png" mode="widthFix" class="editLogo"></image>
+    </view>
+  </view>
+  <view class="flex am_c ju_b p_30 bc_ff bor_t">
+    <view class="flex col">
+      <view class="flex am_c mb_20">
+        <view class="mr_100 f28">段义心</view>
+          <view class="mr_30 f28">152****1234</view>
+      </view>
+      <view class="c_55">山东省济南市历下区舜华路街道香格里拉 东北塔 0227</view>
+    </view>
+    <view class="flex">
+      <image src="/images/C1.2.png" mode="widthFix" class="editLogo"></image>
+    </view>
+  </view>
+</view>
+
+<view catchtap="navigatoAddress" class="preservation">新增地址</view>

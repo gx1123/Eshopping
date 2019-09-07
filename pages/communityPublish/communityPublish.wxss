@@ -9,9 +9,10 @@ page{
   width: 100%;
   min-height: 434rpx;
   background-color: #fff;
-  margin-top: 20rpx;
+  /* margin-top: 20rpx; */
   box-sizing: border-box;
   padding: 20rpx;
+  border-top: 20rpx solid #eee;
 }
 
 .publish-textarea{

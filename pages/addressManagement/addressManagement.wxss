@@ -1,0 +1,45 @@
+/* pages/editAddress/editAddress.wxss */
+.w20{
+  width: 20%;
+}
+.c_88{
+  color: #888;
+}
+.preservation{
+  font-size: 32rpx;
+  width: 80%;
+  height: 88rpx;
+  line-height: 88rpx;
+  position: fixed;
+  left: 10%;
+  text-align: center;
+  color: #fff;
+  background-image: linear-gradient(90deg, 
+		#ff5b4f 0%, 
+		#f83941 100%);
+	border-radius: 44rpx;
+  bottom: 3vh;
+}
+.h100{
+  height: 100vh;
+}
+.down{
+  width: 26rpx;
+}
+.w80{
+  width: 80%;
+}
+.editLogo{
+  width: 26rpx;
+}
+.mr_100{
+  margin-right: 100rpx;
+}
+.default{
+  padding: 5rpx 10rpx;
+  color: #fc3d42;
+  font-size: 20rpx;
+  background-color: #fff4f4;
+	border-radius: 15rpx;
+	border: solid 1rpx #fc3d42;
+}

@@ -1,13 +1,22 @@
 {
   "pages": [
-    "pages/myOrderDetails/myOrderDetails",
     "pages/index/index",
+    "pages/systemMessages/systemMessages",
+    "pages/myOrderDetails/myOrderDetails",
     "pages/myOrderList/myOrderList",
     "pages/communityPublish/communityPublish",
     "pages/communityDetails/communityDetails",
     "pages/user/user",
     "pages/community/community",
-    "pages/shopping/shopping"
+    "pages/shopping/shopping",
+    "pages/myComment/myComment",
+    "pages/allActivity/allActivity",
+    "pages/placeOrder/placeOrder",
+    "pages/productView/productView",
+    "pages/cart/cart",
+    "pages/group/group",
+    "pages/addressManagement/addressManagement",
+    "pages/editAddress/editAddress"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -46,5 +55,13 @@
       }
     ]
   },
+  "subpackages": [
+    {
+      "root": "subpackages/etc",
+      "pages": [
+        "pages/index/index"
+      ]
+    }
+  ],
   "sitemapLocation": "sitemap.json"
 }

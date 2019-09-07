@@ -1,0 +1,41 @@
+.w15{
+  width: 15rpx;
+}
+.w40{
+  width: 40rpx;
+}
+.productImg{
+  width: 160rpx;
+}
+.spec{
+  border-radius: 10rpx;
+	border: solid 1rpx #fc3d42;
+  padding: 5rpx 10rpx;
+  color: #fc3d42;
+  display: inline-block;
+}
+.placeOrder{
+  position: fixed;
+  bottom: 10rpx;
+  width: calc(100% - 60rpx);
+}
+.w70{
+  width: 70%;
+  background: #222;
+  height: 90rpx;
+  border-top-left-radius: 40rpx;
+  border-bottom-left-radius: 40rpx;
+}
+.w30{
+  width: 30%;
+  background: #fc3d42;
+  height: 90rpx;
+  border-top-right-radius: 40rpx;
+  border-bottom-right-radius: 40rpx;
+}
+.mr_15{
+  margin-right: 15rpx;
+}
+.h100{
+  height: 100vh;
+}

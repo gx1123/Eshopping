@@ -1,5 +1,67 @@
 <!--pages/myOrderDetails/myOrderDetails.wxml-->
 <view class="order-details">
-  <view class="order-details-top" style="background: url(https://etc.qljtxx.com/file//etc/2019-09-06/1567756176835.png) no-repeat center;">
+  <!-- 顶部图片 -->
+  <view class="order-details-top box-flex am_c">
+    <image class='order-details-top-img' style="width: 100%;height:100%" src='https://etc.qljtxx.com/file//etc/2019-09-06/1567756176835.png'></image>
+    <view class="order-details-top-text">
+      <view class="f32">已发货</view>
+      <view class="f22">您的包裹正在奔向你的路上</view>
+    </view>
   </view>
+  <!-- 收货人 -->
+  <view class="order-details-user box-flex am_c">
+    <view class="mr_30">
+      <image style="width: 36rpx" mode="widthFix" src="/images/D3.2.png"></image>
+    </view>
+    <view>
+      <view class="box-flex mb_20">
+        <view style="margin-right:65rpx">
+          <text class="f32">老司机</text>
+        </view>
+        <view>
+          <text class="f32">18340021915</text>
+        </view>
+      </view>
+      <view style="color:#888">地址: 山东省济南市历城区财富广场齐鲁大厦2412号</view>
+    </view>
+  </view>
+  <!-- 商品 -->
+  <view class="order-list">
+    <view class="order-item-goods box-flex am_c bor_b" wx:for='{{2}}' wx:key='{{index}}'>
+      <image style="width:160rpx;height: 160rpx;margin-right: 26rpx" src='https://etc.qljtxx.com/file//etc/2019-09-04/1567570230148.jpg'></image>
+      <view class="box-flex col ju_b" style="height: 160rpx">
+        <view class="order-item-goods-name">中天酒庄干红葡萄就酒</view>
+        <view style="margin-bottom: 15rpx">
+          <view class="order-item-goods-specification">200ml</view>
+        </view>
+        <view class="box-flex am_c">
+          <image class='e-img' style="margin-right:18rpx" src='/images/E.png'></image>
+          <text style="margin-right:18rpx">60000</text>
+          <text>x 1</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 订单信息 -->
+  <view class='order-details-info'>
+    <view class='home-title box-flex'>
+      <view class='box-flex home-title-left'>
+        <view class='home-title-g'></view>
+        <view class="f32">订单信息</view>
+      </view>
+    </view>
+    <view class='order-details-info-box'>
+      <view>订单编号: 123485665567</view>
+      <view>支付时间: 2018-09-10 08:30</view>
+      <view class="flex-center-between">
+        <text>物流编号: 234345567</text>
+        <text catchtap="copyNumber" style="color:red;">复制单号</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="bottom-fixed bor_t box-flex am_c ju_e">
+  <view class="bottom-fixed-button">确认收货</view>
 </view>

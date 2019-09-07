@@ -8,6 +8,7 @@ App({
     this.getUpdateManager()
     // 获取用户手机 位置 基本信息
     this.getPhoneInfo()
+    //
 
   },
   $servers: apis(domain),  //所有api

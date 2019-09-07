@@ -1,0 +1,82 @@
+<e-head headTitle="我的"></e-head>
+<view class="c_ff f28">当前已选3件（共10件）</view>
+<block wx:if='{{hasList}}'>
+  <!-- <>购物车列表 -->
+  <view class="carts-list">
+    <view wx:for="{{carts}}" class="carts-item bc_ff mb_30" wx:key='cart' wx:item='item'>
+      <view class="flex mb_20 am_c ju_b bor_be pb_30">
+        <view class="flex">
+          <view class="carts-radio mr_30">
+            <image class="carts-select" bindtap="bindCheckbox" data-index="{{index}}" src="{{item.isSelect?'/images/B3.4.png':'/images/B3.3.png'}}" />
+          </view>
+          <view class="f28">{{item.name}}</view>
+        </view>
+        <view class="flex">
+          <image class="right" src="/images/D1.5.png" mode="widthFix"></image>
+        </view>
+      </view>
+
+      <view class="flex mb_30 am_c pos_rel" wx:for="{{item.content}}" wx:key="" wx:for-item="cart">
+        <!-- //复选框 -->
+        <view class="carts-radio">
+          <image class="carts-select" bindtap="bindCheckbox" data-index="{{index}}" src="{{item.isSelect?'/images/B3.4.png':'/images/B3.3.png'}}" />
+        </view>
+        <!-- //商品信息 -->
+        <view class="carts-cnt">
+          <image class="carts-image" src="{{imghref}}{{cart.goods_img}}" mode="aspectFill" />
+          <view class="carts-info">
+            <view class="carts-title clamp2">{{cart.goods_name}}</view>
+            <view>
+              <view class="carts-guige">{{cart.guige}}ml</view>
+            </view>
+            <view class="carts-subtitle flex am_c">
+              <view class="flex">
+                <image src="/images/E.png" mode="widthFix" class="priecLogo"></image>
+              </view>
+              <view class="carts-price c--f60 ml_10">{{cart.price}}</view>
+            </view>
+          </view>
+        </view>
+        <!-- //数量加减 -->
+        <view class="carts-num">
+          <text class="minus" bindtap="bindMinus" data-index='{{index}}'>-</text>
+          <input type="number" bindinput="bindIptCartNum" data-index='{{index}}' value="{{cart.num}}" />
+          <text class="plus normal" data-index='{{index}}' bindtap="bindPlus">+</text>
+        </view>
+
+        <!-- //删除 -->
+        <icon class="carts-del" type="clear" size="16" color="#ccc" data-index="{{index}}" bindtap="bindCartsDel" />
+      </view>
+    </view>
+  </view>
+  <view class="carts-footer">
+    <view class="bottomfixed">
+      <view class="inner">
+        <view class="chkAll" bindtap="bindSelectAll">
+          <image class="allselect" src="{{selectAllStatus?'/images/B3.4.png':'/images/B3.3.png'}}" />
+          <text class="ml_20">全选</text>
+        </view>
+        <view class="total flex">
+          <view>合计：</view>
+          <view class="flex am_c">
+            <view class="flex">
+              <image src="/images/E.png" mode="widthFix" class="priecLogo"></image>
+            </view>
+            <em class="ml_10">{{totalMoney}}</em>
+          </view>
+
+        </view>
+
+        <view wx:if="{{totalCount != 1}}" class="btn-pay flex" bindtap='bindjiesuan'>立即兑换</view>
+        <view wx:else class="btn-pay disabled flex">立即兑换</view>
+      </view>
+    </view>
+  </view>
+</block>
+<block wx:else>
+  <view class="content">
+    <view style="margin-top:50px;width:100%;">
+      <view style='font-size:15px;'>购物车没有商品!</view>
+    </view>
+  </view>
+</block>

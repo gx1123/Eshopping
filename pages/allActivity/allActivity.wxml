@@ -1,0 +1,6 @@
+<!--pages/allActivity/allActivity.wxml-->
+ <view class='box-flex activity-box' style="margin-top: 30rpx">
+    <view class='activity-box-item' wx:for='{{ activityList }}' wx:key='{{ index }}'>
+      <image lazy-load src='{{ item }}'></image>
+    </view>
+  </view>

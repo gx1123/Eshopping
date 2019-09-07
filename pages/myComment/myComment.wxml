@@ -1,0 +1,22 @@
+<!--pages/myComment/myComment.wxml-->
+<view class="community-box">
+  <view>
+    <view class='comment-box-content' wx:for='{{5}}' wx:key='{{index}}'>
+      <view class='box-flex comment-box-user'>
+        <view class="comment-box-user box-flex">
+          <image class='comment-user-img' src='/images/D1.1.png'></image>
+          <text class="comment-user-name">小巷秋雨</text>
+        </view>
+        <view class="box-flex flex-align-center">
+          <text class="comment-user-name">20分钟前</text>
+        </view>
+      </view>
+      <view class='comment-box-text-box'>
+        <view class="comment-box-text">回复我: 我还有多余的200</view>
+        <view style="padding-bottom: 25rpx;" class='bor_b'>
+          <view class="comment-box-fan">小巷秋雨: 还差200就可以换净水机了。。。。努力赚钱啊。。。。</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

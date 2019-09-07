@@ -14,7 +14,7 @@
 
 .send-pop {
   width: 630rpx;
-  height: 516rpx;
+  min-height: 516rpx;
   background-color: #fff;
   border-radius: 10rpx;
   position: relative;
@@ -31,45 +31,46 @@
   top: 42rpx;
 }
 
-.send-pop-title{
+.send-pop-title {
   text-align: center;
   font-size: 30rpx;
 }
 
-.send-pop-center{
+.send-pop-center {
   margin-top: 55rpx;
 }
 
-.send-pop-center-item{
+.send-pop-center-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 76rpx;
   border-bottom: 1rpx solid #eee;
-
 }
 
-.send-pop-input-box{
+.send-pop-input-box {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-.send-pop-input-box input{
+
+.send-pop-input-box input {
   margin-right: 20rpx;
-   text-align: right;
+  text-align: right;
 }
+
 .send-pop-input-box view {
   width: 80rpx;
   height: 32rpx;
   border-radius: 16rpx;
-  border:1rpx solid red;
+  border: 1rpx solid red;
   font-size: 22rpx;
   text-align: center;
   background-color: #fff4f4;
   color: red;
 }
 
-.send-pop-button{
+.send-pop-button {
   width: 530rpx;
   height: 68rpx;
   text-align: center;
@@ -78,31 +79,43 @@
   margin: 60rpx auto 0;
   border-radius: 34rpx;
   color: #fff;
+  border: 1rpx solid #fd5b45;
 }
 
-.send-pop-center2{
+.send-pop-button1 {
+  width: 530rpx;
+  height: 68rpx;
+  text-align: center;
+  line-height: 68rpx;
+  background-color: #ffefef;
+  margin: 60rpx auto 0;
+  border-radius: 34rpx;
+  color: #fd5b45;
+  border: 1rpx solid #fd5b45;
+}
+
+.send-pop-center2 {
   text-align: center;
   margin-top: 55rpx;
   box-sizing: border-box;
   padding: 0rpx 20rpx;
 }
 
-.send-pop-hint{
+.send-pop-hint {
   margin-top: 25rpx;
   font-size: 22rpx;
   color: #888;
   margin-bottom: 20rpx;
 }
 
-.send-pop-num{
+.send-pop-num {
   font-size: 34rpx;
   padding-bottom: 30rpx;
   border-bottom: 1rpx solid #eee;
 }
 
-.send-pop-center3{
+.send-pop-center3 {
   width: 351rpx;
   height: 254rpx;
   margin: 25rpx auto;
-
 }

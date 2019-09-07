@@ -1,5 +1,5 @@
 <!--pages/index/index.wxml-->
-<wxs src='../../utils/basic.wxs' module='basic' />
+<wxs src='../../wxs/basic.wxs' module='basic' />
 <view>
   <!-- 头部 -->
   <view class='home-top box-flex'>
@@ -10,8 +10,12 @@
       <view class='home-top-money'>{{ basic.priceSwitch(14590) }}</view>
     </view>
     <view class='home-top-images box-flex'>
-      <image src='/images/A1.2.1.png'></image>
-      <image src='/images/A1.2.2.png' catchtap="navigateToShopping"></image>
+      <navigator url="/pages/group/group">
+        <image src='/images/A1.2.1.png'></image>
+      </navigator>
+      <navigator open-type="switchTab" url="/pages/shopping/shopping">
+        <image src='/images/A1.2.2.png' catchtap="navigateToShopping"></image>
+      </navigator>
       <image src='/images/A1.2.3.png' catchtap="changeSendPopVisible"></image>
     </view>
   </view>
@@ -23,7 +27,9 @@
       <view class='home-title-g'></view>
       <view>活动池</view>
     </view>
-    <image class='dian-img' mode='widthFix' src='/images/A1.4.png'></image>
+    <navigator url="/pages/allActivity/allActivity">
+      <image class='dian-img' mode='widthFix' src='/images/A1.4.png'></image>
+    </navigator>
   </view>
   <!-- 活动池子 -->
   <view class='box-flex activity-box'>
@@ -37,7 +43,9 @@
       <view class='home-title-g'></view>
       <view>E豆商城</view>
     </view>
-    <image class='dian-img' catchtap="navigateToShopping" mode='widthFix' src='/images/A1.4.png'></image>
+    <navigator open-type="switchTab" url="/pages/shopping/shopping">
+      <image class='dian-img' mode='widthFix' src='/images/A1.4.png'></image>
+    </navigator>
   </view>
   <!-- 商城池子 -->
   <e-shopping-list></e-shopping-list>

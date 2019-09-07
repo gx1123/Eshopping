@@ -1,0 +1,18 @@
+<!--pages/systemMessages/systemMessages.wxml-->
+<view class="system-box">
+  <view class="system-item">
+    <view class="system-date">早上11:15</view>
+    <view class="system-messages1">
+      <view class="system-messages1-title bor_b">通知</view>
+      <view class='system-messages1-text'>您的订单已发货，点击查看详情。</view>
+    </view>
+  </view>
+
+  <view class="system-item">
+    <view class="system-date">下午18:15</view>
+    <view class="system-messages2">
+      <image src='https://etc.qljtxx.com/file//etc/2019-09-04/1567570230148.jpg' mode="aspectFill"></image>
+      <view>大白兔奶糖限定香水来啦！只要100E豆！</view>
+    </view>
+  </view>
+</view>

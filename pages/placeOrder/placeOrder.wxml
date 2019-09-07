@@ -1,0 +1,57 @@
+<view class="bc_ee h100 pt_10">
+  <view class="flex am_c m_30 p_30 bc_ff br10">
+    <view class="mr_20">
+      <view class="flex am_c mb_30 ju_b">
+        <view class="f30">收货人：老司机</view>
+        <view class="f30">15253171234</view>
+      </view>
+      <navigator url='/pages/addressManagement/addressManagement'>
+        <view class="f28 c_55">收货地址：山东省济南市历下区舜华路街道香格里拉 东北塔 0227</view>
+      </navigator>
+    </view>
+    <view class="flex">
+      <image src="/images/D1.5.png" mode="widthFix" class="w15"></image>
+    </view>
+  </view>
+
+
+  <view class="m_30 p_30 bc_ff br10">
+    <view class="f28">中天酒庄官方旗舰店</view>
+    <view class="flex mt_60">
+      <view class="flex mr_40">
+        <image src="/images/productImg.jpg" mode="widthFix" class="productImg"></image>
+      </view>
+      <view>
+        <view class="f30">中天酒庄干红葡萄足迹</view>
+        <view class="spec mt_20 mb_30">200ml</view>
+        <view class="flex am_c">
+          <view class="flex am_c">
+            <view class="flex mr_10">
+              <image src="/images/E.png" mode="widthFix" class="w40"></image>
+            </view>
+            <view>60,000</view>
+          </view>
+          <view class="ml_40">x1</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="flex m_30 p_30 ju_b bc_ff br10">
+    <view class="f28">配送方式</view>
+    <view class="f28">免邮</view>
+  </view>
+
+</view>
+<view class="flex am_c ju_b m_30 placeOrder">
+  <view class="flex am_c w70">
+    <view class="c_ff ml_40 f32">合计</view>
+    <view class="flex am_c">
+      <view class="flex mr_15 ml_20">
+        <image src="/images/E.png" mode="widthFix" class="w40"></image>
+      </view>
+      <view class="c_ff f32">12,000</view>
+    </view>
+  </view>
+  <view class="w30 c_ff flex ju_c am_c f32">提交订单</view>
+</view>

@@ -34,7 +34,7 @@
   <!-- 选择 -->
   <view class='user-bottom'>
     <view class="user-bottom-list">
-      <navigator class="user-bottom-item box-flex">
+      <navigator url="/pages/cart/cart" class="user-bottom-item box-flex">
         <text>我的购物车</text>
         <image style="width:14rpx;height:26rpx;" src='/images/D1.5.png'></image>
       </navigator>
@@ -49,11 +49,11 @@
     </view>
 
     <view class="user-bottom-list">
-      <navigator class="user-bottom-item box-flex">
+      <navigator url='/pages/myComment/myComment' class="user-bottom-item box-flex">
         <text>我的评论</text>
         <image style="width:14rpx;height:26rpx;" src='/images/D1.5.png'></image>
       </navigator>
-      <navigator class="user-bottom-item box-flex">
+      <navigator url='/pages/systemMessages/systemMessages' class="user-bottom-item box-flex">
         <text>系统消息</text>
         <image style="width:14rpx;height:26rpx;" src='/images/D1.5.png'></image>
       </navigator>

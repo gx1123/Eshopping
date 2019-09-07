@@ -1,7 +1,87 @@
 /* pages/myOrderDetails/myOrderDetails.wxss */
 
-.order-details-top{
+page {
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+}
+
+.order-details-top {
   width: 100%;
   height: 200rpx;
-  background-size: cover;
+  position: relative;
 }
+
+.order-details-top-img {
+  position: absolute;
+  z-index: -1;
+}
+
+.order-details-top-text {
+  padding-left: 66rpx;
+  color: #fff;
+}
+
+.order-details-user {
+  height: 168rpx;
+  background-color: #fff;
+  font-size: 26rpx;
+  width: 100%;
+  padding: 0 32.5rpx;
+}
+
+.order-list {
+  width: 100%;
+  background-color: #fff;
+  padding: 0 18rpx 6rpx;
+  margin-top: 22rpx;
+}
+.order-list .order-item-goods:nth-last-child(1) {
+  border-bottom: none;
+}
+
+.order-item-goods {
+  padding: 20rpx 0;
+}
+
+.order-item-goods-name {
+  line-height: 40rpx;
+}
+
+.order-item-goods-specification {
+  font-size: 20rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  padding: 0 10rpx;
+  display: inline-block;
+  text-align: center;
+  border-radius: 10rpx;
+  border: 1rpx solid #fc3d42;
+  color: #fc3d42;
+}
+
+.order-item-money {
+  margin-top: 19rpx;
+  font-size: 30rpx;
+}
+
+
+.order-details-info{
+  background-color: #fff;
+  min-height: 200rpx;
+  padding-top: 10rpx;
+  margin-top: 22rpx;
+  padding-bottom: 10rpx;
+  margin-bottom: 120rpx;
+}
+
+.order-details-info-box{
+  padding: 0 44rpx;
+}
+
+.order-details-info-box view{
+  line-height: 60rpx;
+  color:#888;
+  font-size: 28rpx;
+}
+

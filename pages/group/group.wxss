@@ -1,0 +1,65 @@
+/* pages/group/group.wxss */
+
+.portrait {
+  width: 100rpx;
+}
+
+.bg_ee {
+  background: #eee;
+  height: 40rpx;
+}
+
+.tab {
+  float: left;
+  text-align: center;
+  padding: 10rpx 0;
+  color: #555;
+  font-size: 28rpx;
+  margin: 0 30rpx;
+  margin-top: 8rpx;
+}
+
+.topTabSwiper:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.tabBorer {
+  border-bottom: 2px solid #fc3d42;
+  color: #000;
+  font-weight: bold;
+  font-size: 34rpx;
+  margin-top: 0;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper_con {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 75rpx;
+}
+.preservation{
+  width: 300rpx;
+  background-color: #fff0f0;
+	border-radius: 24rpx;
+	border: solid 2rpx #fc3d42;
+  padding: 10rpx 20rpx;
+  color: #fc3d42;
+}
+.qrcode{
+  width: 435rpx;
+}
+.lenvel{
+  position: absolute;
+  top:60rpx;
+  width: 100%;
+  
+}
+.mt_150{
+  margin-top: 150rpx;
+}

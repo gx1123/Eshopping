@@ -47,4 +47,16 @@
     <view class='send-pop-button' style="margin-top: 40rpx" catchtap="closeSendPop">完成</view>
   </view>
 
+  <view class="send-pop" wx:if='{{popType === 4}}'>
+    <image src='/images/A1.7.png' catchtap="closeSendPop" class='off-img'></image>
+    <view class='send-pop-title'>转赠成功</view>
+    <view class="send-pop-center3">
+      <image style="width: 100%" mode="widthFix" src='https://etc.qljtxx.com/file//etc/2019-09-05/1567660935500.png'></image>
+    </view>
+    <view class='send-pop-button' style="margin-top: 40rpx" catchtap="navigatoMyOrderDetails">查看订单</view>
+        <view class='send-pop-button1' style="margin-top: 20rpx" catchtap="closeSendPop">完成</view>
+
+  </view>
+
+
 </view>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "e-head": "/components/e-head/e-head"
+  },
+  "navigationStyle": "custom"
+}

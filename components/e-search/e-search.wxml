@@ -5,6 +5,8 @@
     <input style="margin-left:20rpx;width:500rpx;" placeholder="尝试搜净水机" type="text"></input>
   </view>
   <view class='e-search-shopping'>
-    <image class='shopping-img' src='/images/B1.2.png'></image>
+    <navigator url="/pages/cart/cart">
+      <image class='shopping-img' src='/images/B1.2.png'></image>
+    </navigator>
   </view>
 </view>

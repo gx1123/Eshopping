@@ -1,0 +1,35 @@
+<view class="bc_ee h100">
+  <view class="flex am_c p_30 bc_ff bor_t">
+    <view class="w20">收货人</view>
+    <input class="w80" value="段义心"></input>
+  </view>
+  <view class="flex am_c p_30 bc_ff bor_t">
+    <view class="w20">手机号码</view>
+    <input class="w80" value="152****7373"></input>
+  </view>
+  <view class="flex am_c p_30 bc_ff bor_t">
+    <view class="w20">所在地区</view>
+    <view class="flex am_c ju_b w80">
+    <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+    <view class="picker">
+      {{region[0]}}{{region[1]}}{{region[2]}}
+    </view>
+  </picker>
+  <view class="flex">
+  <image src="/images/D5.1.png" mode="widthFix" class="down"></image>
+  </view>
+    </view>
+    
+  </view>
+  <view class="flex am_c p_30 bc_ff bor_t">
+    <view class="w20">详细地址</view>
+    <input class="w80" value="汇展香格里拉东北塔 0227"></input>
+  </view>
+  <view class="flex am_c p_30 ju_b bc_ff">
+    <view>设为默认地址</view>
+    <switch class='red sm' checked></switch>
+  </view>
+  <view class="c_88 ml_30 mt_20">提醒：设为默认后，每次下单时会使用该地址，请在下单前确认</view>
+</view>
+
+<view class="preservation">保存地址</view>

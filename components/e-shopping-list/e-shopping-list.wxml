@@ -1,6 +1,6 @@
 <!--components/e-shopping-list/e-shopping-list.wxml-->
 <view class='shopping-box box-flex'>
-  <view class='shopping-box-item' wx:for='{{6}}' wx:key='{{index}}'>
+  <view class='shopping-box-item' catchtap="navigatoGoodsDetails" wx:for='{{6}}' wx:key='{{index}}'>
     <view>
       <image class='shopping-box-item-img' lazy-load src='https://etc.qljtxx.com/file//etc/2019-09-04/1567570230148.jpg'></image>
     </view>

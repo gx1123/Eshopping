@@ -28,6 +28,10 @@ Component({
       this.setData({
         popType: this.data.popType + 1
       })
+    },
+    navigatoMyOrderDetails () {
+      this.triggerEvent('navigatoMyOrderDetails')
+      this.triggerEvent('closeSendPop')
     }
   }
 })

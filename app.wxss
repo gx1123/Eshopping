@@ -1,15 +1,9 @@
 /**app.wxss**/
 @import './wxss/personui.wxss';
-
+@import './wxss/colorui.wxss';
 view, text, scroll-view, swiper, button, form, input, textarea, label, navigator,
 image {
   box-sizing: border-box;
-}
-
-page {
-  width: 100%;
-  height: auto;
-  font-size: 24rpx;
 }
 
 .box-flex {
@@ -98,4 +92,23 @@ page {
   position: fixed;
   bottom: 100rpx;
   right: 0;
+}
+
+.bottom-fixed{
+ height: 98rpx;
+ position: fixed;
+ width: 100%;
+ bottom: 0;
+ background-color: #fff;
+ padding: 0 30rpx
+}
+
+.bottom-fixed-button{
+  width: 204rpx;
+  height: 58rpx;
+  background-color: #fd3b42;
+  text-align: center;
+  line-height: 58rpx;
+  border-radius: 29rpx;
+  color: #fff;
 }

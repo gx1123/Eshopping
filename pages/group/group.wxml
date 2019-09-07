@@ -1,0 +1,44 @@
+<!--pages/group/group.wxml-->
+<view class="pos_rel">
+  <view class="flex pl_30 pr_30 am_c">
+    <view>
+      <image class="portrait" src="/images/portrait.png" mode="widthFix"></image>
+    </view>
+    <view class="ml_30">
+      <view class="c_88 mt_10">当前已邀请办理人数</view>
+      <view class="mt_20">
+        <text class="f40">1,523</text>人</view>
+    </view>
+  </view>
+  <view class="flex pl_20 pr_20 lenvel">
+    <image class="wth_100" src="/images/group-level.png" mode="widthFix"></image>
+  </view>
+  <view class="pl_30 pr_30 pb_30 f22 c_55 mt_150">每成功邀请一人办理 得100E豆。累计1000人可额外得5500元现金； 5000人可额外的得5.5万元；1万人可额外得11万</view>
+
+  <view class="bg_ee"></view>
+  <view>
+    <view class='topTabSwiper'>
+      <view class='tab  {{currentData == 0 ? "tabBorer" : ""}}' data-current="0" bindtap='checkCurrent'>我的二维码</view>
+      <view class='tab  {{currentData == 1 ? "tabBorer" : ""}}' data-current="1" bindtap='checkCurrent'>我的成就</view>
+    </view>
+    <swiper current="{{currentData}}" class='swiper' style="height:600px;" duration="300" bindchange="bindchange">
+      <swiper-item>
+        <view class='swiper_con'>
+          <view class="f30">178****1708</view>
+          <view class="mb_60">
+            <image src="/images/qrcode.png" mode="widthFix" class="qrcode"></image>
+          </view>
+          <view>分享您的专属二维码给您的好友</view>
+          <view>成功邀请并注册后即可获得相应的奖励</view>
+          <view class="flex ju_c mt_60">
+            <view class="f28 preservation">保存到相册</view>
+          </view>
+
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class='swiper_con'>我的成就</view>
+      </swiper-item>
+    </swiper>
+  </view>
+</view>

@@ -1,0 +1,9 @@
+/* pages/myComment/myComment.wxss */
+@import '../communityDetails/communityDetails.wxss';
+
+.comment-box-fan {
+  padding: 21rpx;
+  background-color: #eee;
+  margin-top: 20rpx;
+  color: #888;
+}
